@@ -9,7 +9,7 @@ Este es un ejemplo de cómo puedes mostrar contenido escrito en Markdown en tu p
 
 ## Secciones
 
-- [Bienvenido a Mi Página en GitHub](#bienvenido-a-mi-página-en-github)
+- [Bienvenido a Mi Página en GitHub](t1y2.md)
   - [Secciones](#secciones)
   - [Introducción](#introducción)
   - [Sobre mí](#sobre-mí)
