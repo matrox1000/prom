@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+<link rel="stylesheet" href="file:////Users/Cuevas/.vscode/extensions/goessner.mdmath-2.7.4/themes/default/style.css">
+
+</head>
+<body class="markdown-body">
+<h1 id="temas-1-y-2-c">Temas 1 y 2. C#</h1>
+<h2 id="sintaxis-y-conceptos-del-lenguaje-c">Sintaxis y conceptos del lenguaje C#.</h2>
+<h3 id="c-types-and-operators">C# Types and Operators</h3>
+<p>C# es un lenguaje fuertemente tipado. Tenemos que convertir explícitamente los tipos de datos.</p>
+<pre><code class="language-csharp"><span class="hljs-built_in">int</span> total = <span class="hljs-built_in">int</span>.Parse(<span class="hljs-string">&quot;359&quot;</span>);
+<span class="hljs-built_in">string</span> message = <span class="hljs-number">7.</span>ToString();
+</code></pre>
+<p>Tambiñen podemos usar casting para convertir tipos de datos.</p>
+<pre><code class="language-csharp"><span class="hljs-built_in">double</span> preciseLength = <span class="hljs-number">5.61</span>;
+<span class="hljs-built_in">int</span> roundedLength = (<span class="hljs-built_in">int</span>)preciseLength;
+</code></pre>
+<p>La siguiente tabla muestra los tipos nativos en C#.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de dato</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>Entero sin signo de 8 bits</td>
+</tr>
+<tr>
+<td>sbyte</td>
+<td>Entero con signo de 8 bits</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Entero con signo de 16 bits</td>
+</tr>
+<tr>
+<td>ushort</td>
+<td>Entero sin signo de 16 bits</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Entero con signo de 32 bits</td>
+</tr>
+<tr>
+<td>uint</td>
+<td>Entero sin signo de 32 bits</td>
+</tr>
+<tr>
+<td>long (l)</td>
+<td>Entero con signo de 64 bits</td>
+</tr>
+<tr>
+<td>ulong (ul)</td>
+<td>Entero sin signo de 64 bits</td>
+</tr>
+<tr>
+<td>float (f)</td>
+<td>Número de coma flotante de 32 bits</td>
+</tr>
+<tr>
+<td>double (d)</td>
+<td>Número de coma flotante de 64 bits</td>
+</tr>
+<tr>
+<td>decimal (m)</td>
+<td>Número decimal de 128 bits</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>Valor booleano</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Carácter Unicode de 16 bits</td>
+</tr>
+<tr>
+<td>string</td>
+<td>Secuencia de caracteres Unicode</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp"><span class="hljs-comment">// si hay ambigüedad en el tipo de dato se pueden usar los sufijos l, f, d, m, ul, ul</span>
+<span class="hljs-built_in">decimal</span> price = <span class="hljs-number">9.95</span>m;
+<span class="hljs-comment">// podemos asignar un valor unicode a un char</span>
+<span class="hljs-built_in">char</span> letter = <span class="hljs-string">&#x27;\u0058&#x27;</span>;
+<span class="hljs-comment">// y podemos obetner el valor unicode de un char</span>
+<span class="hljs-built_in">int</span> <span class="hljs-keyword">value</span> = (<span class="hljs-built_in">int</span>)letter;
+</code></pre>
+<h3 id="operadores">Operadores</h3>
+<p>Tabla de operadores en c#.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primarios</td>
+<td>x.y x?.y f(x) a[x] x++ x-- new typeof default</td>
+</tr>
+<tr>
+<td>checked unchecked nameof</td>
+<td></td>
+</tr>
+<tr>
+<td>Unarios</td>
+<td>+ - ! ~ ++x --x (T)x await x</td>
+</tr>
+<tr>
+<td>Multiplicativos</td>
+<td>* / %</td>
+</tr>
+<tr>
+<td>Aditivos</td>
+<td>+ -</td>
+</tr>
+<tr>
+<td>Desplazamiento</td>
+<td>&lt;&lt; &gt;&gt;</td>
+</tr>
+<tr>
+<td>Relacionales y de tipo</td>
+<td>&lt; &gt; &lt;= &gt;= is as</td>
+</tr>
+<tr>
+<td>Igualdad</td>
+<td>== !=</td>
+</tr>
+<tr>
+<td>AND lógico</td>
+<td>&amp;</td>
+</tr>
+<tr>
+<td>XOR lógico</td>
+<td>^</td>
+</tr>
+<tr>
+<td>OR lógico</td>
+<td>|</td>
+</tr>
+<tr>
+<td>AND lógico condicional</td>
+<td>&amp;&amp;</td>
+</tr>
+<tr>
+<td>OR lógico condicional</td>
+<td>||</td>
+</tr>
+<tr>
+<td>Coalescencia nula</td>
+<td>??</td>
+</tr>
+<tr>
+<td>Condicional</td>
+<td>?:</td>
+</tr>
+<tr>
+<td>Asignación</td>
+<td>= *= /= %= += -= &lt;&lt;= &gt;&gt;= &amp;= ^=</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">
+<span class="hljs-built_in">int</span> v1= <span class="hljs-number">1</span>;
+<span class="hljs-comment">// operadores ++ y -- </span>
+<span class="hljs-built_in">int</span> v2 = v1++; <span class="hljs-comment">// v2 = 1, v1 = 2</span>
+<span class="hljs-built_in">int</span> v3 = ++v1; <span class="hljs-comment">// v3 = 3, v1 = 3</span>
+<span class="hljs-comment">// Operador ternario.</span>
+<span class="hljs-built_in">int</span> v4 = (v1 &gt; <span class="hljs-number">2</span>) ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
+</code></pre>
+<p>El Framework class library (FCL) de .NET ofrece más tipos de datos como el datetime:</p>
+<pre><code class="language-csharp">DateTime currentTime = DateTime.Now; <span class="hljs-comment">// fecha y hora actual</span>
+<span class="hljs-built_in">string</span> shortDateString = currentTime.ToShortDateString(); <span class="hljs-comment">// solo fecha en string</span>
+<span class="hljs-built_in">string</span> longDateString = currentTime.ToLongDateString(); <span class="hljs-comment">// fecha y hora en string</span>
+<span class="hljs-built_in">string</span> defaultDateString = currentTime.ToString(); <span class="hljs-comment">// fecha y hora en string</span>
+DateTime tomorrow = currentTime.AddDays(<span class="hljs-number">1</span>); <span class="hljs-comment">// sumamos un día</span>
+</code></pre>
+<p>Formateando cadenas de texto:</p>
+<pre><code class="language-csharp"><span class="hljs-built_in">string</span> name = <span class="hljs-string">&quot;Joe&quot;</span>;
+<span class="hljs-built_in">string</span> helloViaConcatenation = <span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>; <span class="hljs-comment">// concatenación</span>
+<span class="hljs-built_in">string</span> helloViaStringFormat = <span class="hljs-built_in">string</span>.Format(<span class="hljs-string">&quot;Hello, {0}!&quot;</span>, name); <span class="hljs-comment">// igual pero con string.Format</span>
+
+<span class="hljs-comment">// Con string.Format podemos formatear la salida</span>
+<span class="hljs-comment">// {0,-10} indica que el primer argumento se imprime en 10 caracteres a la izquierda</span>
+<span class="hljs-comment">// {1:C} indica que el segundo argumento se imprime como moneda (currency)</span>
+<span class="hljs-built_in">string</span> item = <span class="hljs-string">&quot;bread&quot;</span>;
+<span class="hljs-built_in">decimal</span> amount = <span class="hljs-number">2.25</span>m;
+Console.WriteLine(<span class="hljs-string">&quot;{0,-10}{1:C}&quot;</span>, item, amount);
+Console.WriteLine(<span class="hljs-string">$&quot;<span class="hljs-subst">{item}</span> <span class="hljs-subst">{amount}</span>&quot;</span>); <span class="hljs-comment">// interpolación (desde C# 6)</span>
+
+<span class="hljs-comment">// nameof nos da el nombre de la variable</span>
+<span class="hljs-comment">// con interpolación también podemos formatear la salida como con string.Format</span>
+Console.WriteLine(<span class="hljs-string">$&quot;<span class="hljs-subst">{<span class="hljs-keyword">nameof</span>(item)}</span>: <span class="hljs-subst">{item,<span class="hljs-number">-10</span>}</span> <span class="hljs-subst">{<span class="hljs-keyword">nameof</span>(amount)}</span>: <span class="hljs-subst">{amount:C}</span>&quot;</span>);
+
+<span class="hljs-built_in">string</span> input = Console.ReadLine(); <span class="hljs-comment">// lee una línea de la consola</span>
+</code></pre>
+<p>StringBuilder es más eficiente que concatenar strings, ya que string es inmutable y cada vez que concatenamos se crea un nuevo string en memoria</p>
+<pre><code class="language-csharp"><span class="hljs-keyword">using</span> System.Text; <span class="hljs-comment">// para usar StringBuilder</span>
+StringBuilder sb = <span class="hljs-keyword">new</span> StringBuilder();
+sb.Append(<span class="hljs-string">&quot;Your result is &quot;</span>);
+sb.Append(result.ToString());
+Console.WriteLine(sb.ToString());
+
+
+</code></pre>
+<h3 id="control-de-flujo">Control de flujo</h3>
+<pre><code class="language-csharp"><span class="hljs-comment">// if else</span>
+<span class="hljs-built_in">string</span> action4 = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">if</span> (priceGain &lt;= <span class="hljs-number">2</span>m)
+{
+    action4 = <span class="hljs-string">&quot;Sell&quot;</span>;
+}
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (priceGain &gt; <span class="hljs-number">2</span>m &amp;&amp; priceGain &lt;= <span class="hljs-number">3</span>m)
+{
+    action4 = <span class="hljs-string">&quot;Do Nothing&quot;</span>;
+}
+<span class="hljs-keyword">else</span>
+{
+    action4 = <span class="hljs-string">&quot;Sell&quot;</span>;
+}
+
+<span class="hljs-comment">// switch</span>
+<span class="hljs-built_in">string</span> currentWeather = <span class="hljs-string">&quot;rain&quot;</span>;
+<span class="hljs-built_in">string</span> equipment = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">switch</span> (currentWeather)
+{
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;sunny&quot;</span>:
+        equipment = <span class="hljs-string">&quot;sunglasses&quot;</span>;
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;rain&quot;</span>:
+        equipment = <span class="hljs-string">&quot;umbrella&quot;</span>;
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;cold&quot;</span>:
+    <span class="hljs-literal">default</span>:
+        equipment = <span class="hljs-string">&quot;jacket&quot;</span>;
+    <span class="hljs-keyword">break</span>;
+}
+
+<span class="hljs-comment">// todos los case deben tener un break, solo puedes no usar break si el case está vacío como en el case &quot;cold&quot; ( fall-through), en caso contrario el compalidor te derá un error</span>
+</code></pre>
+<h3 id="arrays-y-colecciones">Arrays y colecciones</h3>
+<pre><code class="language-csharp"><span class="hljs-built_in">int</span>[] oddNumbers = { <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span> }; <span class="hljs-comment">// array de 3 int con valores</span>
+<span class="hljs-built_in">int</span> firstOdd = oddNumbers[<span class="hljs-number">0</span>];
+
+<span class="hljs-built_in">string</span>[] names = <span class="hljs-keyword">new</span> <span class="hljs-built_in">string</span>[<span class="hljs-number">3</span>]; <span class="hljs-comment">// array de 3 strings null</span>
+names[<span class="hljs-number">1</span>] = <span class="hljs-string">&quot;Joe&quot;</span>; <span class="hljs-comment">// asignamos un valor al segundo elemento</span>
+</code></pre>
+<p>También podemos usar List, Stack, Queue y demás tipos del FCL</p>
+<pre><code class="language-csharp">List&lt;<span class="hljs-built_in">int</span>&gt; numbers = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt; { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> }; <span class="hljs-comment">// lista de 3 int con valores</span>
+List&lt;<span class="hljs-built_in">int</span>&gt; numbers2 = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-built_in">int</span>&gt;(); <span class="hljs-comment">// lista vacía</span>
+numbers.Add(<span class="hljs-number">4</span>); <span class="hljs-comment">// añadimos un valor al final</span>
+</code></pre>
+<h3 id="bucles">Bucles</h3>
+<p>C# supports several loops, including for, foreach, while, and do</p>
+<pre><code class="language-csharp">
+<span class="hljs-built_in">double</span>[] temperatures = { <span class="hljs-number">72.3</span>, <span class="hljs-number">73.8</span>, <span class="hljs-number">75.1</span>, <span class="hljs-number">74.9</span> };
+<span class="hljs-keyword">for</span> (<span class="hljs-built_in">int</span> i = <span class="hljs-number">0</span>; i &lt; temperatures.Length; i++)
+{
+    Console.WriteLine(i);
+}
+
+<span class="hljs-keyword">foreach</span> (<span class="hljs-built_in">int</span> temperature <span class="hljs-keyword">in</span> temperatures)
+{
+    Console.WriteLine(temperature);
+}
+
+<span class="hljs-built_in">int</span> tempCount = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span> (tempCount &lt; temperatures.Length)
+{
+    Console.WriteLine(tempCount);
+    tempCount++;
+}
+
+<span class="hljs-built_in">int</span> tempCount2 = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span>
+{
+    Console.WriteLine(tempCount2++);
+}
+<span class="hljs-keyword">while</span> (tempCount2 &lt;= temperatures.Length);
+</code></pre>
+<h3 id="comentarios">Comentarios</h3>
+<pre><code class="language-csharp"><span class="hljs-comment">// comentario de una línea</span>
+<span class="hljs-comment">/* comentario de varias
+líneas */</span>
+
+ 
+<span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span></span>
+<span class="hljs-comment"><span class="hljs-doctag">///</span> Esto es para documentar un método</span>
+<span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;/summary&gt;</span></span>
+
+</code></pre>
+<h2 id="programación-orientada-a-objetos-con-c-clases">Programación orientada a objetos con C#: clases.</h2>
+<h2 id="depuración-de-código-con-c-gestión-de-errores-y-excepciones">Depuración de código con C#, gestión de errores y excepciones.</h2>
+<h2 id="el-lenguaje-integrado-de-consultas-linq-en-c">El lenguaje integrado de consultas (LINQ) en C#.</h2>
+<pre><code class="language-csharp"><span class="hljs-comment">// importamos Linq</span>
+<span class="hljs-keyword">using</span> System.Linq 
+
+
+<span class="hljs-comment">// Ejemplo de uso de Linq, obetenemos una lista de clientes de la clase Company</span>
+IEnumerable&lt;Customer&gt; customers = 
+    <span class="hljs-keyword">from</span> cust <span class="hljs-keyword">in</span> Company.Customers 
+    <span class="hljs-keyword">select</span> cust;
+
+<span class="hljs-keyword">foreach</span> (Customer cust <span class="hljs-keyword">in</span> customers) Console.WriteLine(cust.Name);
+
+
+<span class="hljs-comment">// Podemos usar una clase nueva para crear la lista  IEnumerable&lt;CustomerViewModel&gt;</span>
+
+IEnumerable&lt;CustomerViewModel&gt; customerVMs = 
+    <span class="hljs-keyword">from</span> custVM <span class="hljs-keyword">in</span> Company.Customers 
+    <span class="hljs-keyword">select</span> <span class="hljs-keyword">new</span> CustomerViewModel { 
+        Name = custVM.Name
+    };
+
+<span class="hljs-comment">// Podemos hacer lo mismo con una clase anonima</span>
+<span class="hljs-keyword">var</span> customers3 = 
+    <span class="hljs-keyword">from</span> cust3 <span class="hljs-keyword">in</span> Company.Customers
+    <span class="hljs-keyword">select</span> <span class="hljs-keyword">new</span> { 
+        Name = cust3.Name 
+    };
+
+<span class="hljs-comment">// luego usaremos var para recorrer la lista</span>
+<span class="hljs-keyword">foreach</span> (<span class="hljs-keyword">var</span> cust3 <span class="hljs-keyword">in</span> customers3)
+    Console.WriteLine(cust3.Name);
+
+
+<span class="hljs-comment">// evitar usar var en casos donde no se sepa que tipo de dato se esta usando</span>
+<span class="hljs-keyword">var</span> response = DoSomethingAndReturnResults();
+
+<span class="hljs-comment">// podemos filtrar con where</span>
+<span class="hljs-keyword">var</span> customers4 = 
+    <span class="hljs-keyword">from</span> cust4 <span class="hljs-keyword">in</span> Company.Customers 
+    <span class="hljs-keyword">where</span> cust4.Name.Length &gt; <span class="hljs-number">3</span> &amp;&amp; !cust4.Name.StartsWith(<span class="hljs-string">&quot;G&quot;</span>) 
+    <span class="hljs-keyword">select</span> cust4;
+
+<span class="hljs-comment">// podemos ordenar con orderby</span>
+<span class="hljs-keyword">var</span> customers5 = 
+    <span class="hljs-keyword">from</span> cust5 <span class="hljs-keyword">in</span> Company.Customers 
+    <span class="hljs-keyword">orderby</span> cust5.Name <span class="hljs-keyword">descending</span> 
+    <span class="hljs-keyword">select</span> cust5;
+
+<span class="hljs-comment">// podemos hacer uno o más join&#x27;s con otras tablas</span>
+<span class="hljs-keyword">var</span> customerOrders = 
+    <span class="hljs-keyword">from</span> cust <span class="hljs-keyword">in</span> Company.Customers 
+    <span class="hljs-keyword">join</span> ord <span class="hljs-keyword">in</span> Company.Orders 
+        <span class="hljs-keyword">on</span> cust.ID <span class="hljs-keyword">equals</span> ord.CustomerID 
+    <span class="hljs-keyword">select</span> <span class="hljs-keyword">new</span> { 
+        ID = cust.ID, 
+        Customer = cust.Name, 
+        Item = ord.Description
+    };
+
+<span class="hljs-comment">// En este caso es un inner join, si queremos un left join usamos tenemos que poner en el join DefaultIfEmpty</span>
+
+    <span class="hljs-keyword">join</span> ord <span class="hljs-keyword">in</span> Company.Orders.DefaultIfEmpty()
+
+<span class="hljs-comment">// podemos proyector un IEnumerable a un List, array, dictionary etc con ToList, ToArray, toDictionary, etc</span>
+
+<span class="hljs-keyword">var</span> custList = 
+    (<span class="hljs-keyword">from</span> cust <span class="hljs-keyword">in</span> Company.Customers
+    <span class="hljs-keyword">select</span> cust)
+    .ToList();
+
+
+</code></pre>
+<p>LINQ utiliza ejecución diferida: la consulta no se ejecuta hasta que se hace un foreach o se llama proyecta el resultado con un ToList, por ejemplo.</p>
+<pre><code class="language-csharp"><span class="hljs-comment">// Uniones (union), intersecciones(intersect) y diferencias(except)</span>
+
+<span class="hljs-keyword">var</span> additionalCustomers =
+    <span class="hljs-keyword">new</span> List&lt;Customer&gt;
+    {
+        <span class="hljs-keyword">new</span> Customer { ID = <span class="hljs-number">1</span>, Name = <span class="hljs-string">&quot;Gary&quot;</span> }
+    };
+<span class="hljs-keyword">var</span> customerUnion =
+    Company.Customers
+    .Union(additionalCustomers)
+    .ToArray();
+
+<span class="hljs-comment">// First, FirstOrDefault, Single, SingleOrDefault, Last, and LastOrDefault</span>
+
+Console.WriteLine(Company.Customers.First().Name);
+
+<span class="hljs-comment">// First, Last o Single lanzan una InvalidOperationException si no hay elementos en la lista, para evitar esto usamos FirstOrDefault, LastOrDefault o SingleOrDefault</span>
+
+<span class="hljs-keyword">var</span> empty =
+    Company.Customers
+    .Where(cust =&gt; cust.ID == <span class="hljs-number">999</span>)
+    .SingleOrDefault();
+<span class="hljs-keyword">if</span> (empty == <span class="hljs-literal">null</span>)
+    Console.WriteLine(<span class="hljs-string">&quot;No values returned.&quot;</span>);</code></pre>
+
+</body>
+</html>
