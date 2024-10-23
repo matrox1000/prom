@@ -20,8 +20,8 @@ title: "Progreso de lo temas"
 - t7:
 - t8: esperando material
 - t9: por la diapo 19 
-- t10:
-- **t11: OK**
+- **t10: OK**
+- t11:
 - t12: Falta la parte general de metodologías agiles??
 - t13:
 - **t14: OK**
