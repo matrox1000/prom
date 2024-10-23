@@ -25,13 +25,13 @@ description: "Temario promoción A2 Perfirl Ingeniería de Software"
    - Depuración de código con C#, gestión de errores y excepciones
    - El lenguaje integrado de consultas (LINQ) en C#
 
-1. [ASP.NET MVC 5](t3.html)
+2. [ASP.NET MVC 5](t3.html)
    - Acciones de los controladores. Tipos y parámetros
    - Validación de los modelos
    - Sintaxis de las vistas
    - Seguridad en aplicaciones MVC 5. Uso de claves criptográficas, mecanismos de autenticación y control de sesiones
 
-2. [PHP 8](t4.html)
+3. [PHP 8](t4.html)
    - Sintaxis
    - Variables, tipos de datos, estructuras de control, arrays y funciones
    - Programación orientada a objetos
@@ -39,25 +39,25 @@ description: "Temario promoción A2 Perfirl Ingeniería de Software"
    - Control de errores
    - Conexiones a BD
 
-3. [Vue JS](t5.html)
+4. [Vue JS](t5.html)
    - Fundamentos de Vue JS 2
    - Rutas en Vue JS 2 con Vue-Router
    - Directivas y filtros de Vue JS 2
 
-4. [SASS](t6.html)
+5. [SASS](t6.html)
    - Fundamentos y sintaxis de SASS
    - Uso de variables en SASS
    - Anidamiento, funciones y mixins en SASS
    - Estructura y organización de proyectos con SASS
 
-5. [Arquitectura cliente/servidor](t7.html)
+6. [Arquitectura cliente/servidor](t7.html)
    - Arquitectura orientada a servicios (SOA)
    - Servicios Web SOAP. Descripción y descubrimiento de servicios
    - XML y JSON
    - Servicios REST
    - Estándares y seguridad en servicios web y REST
 
-6. [Lenguaje SQL](t8.html)
+7. [Lenguaje SQL](t8.html)
    - Consultas de selección avanzadas del lenguaje SQL
    - Optimización de sentencias
    - Entidades, atributos y relaciones
@@ -66,22 +66,22 @@ description: "Temario promoción A2 Perfirl Ingeniería de Software"
    - Restricciones de integridad
    - Operaciones sobre tablas con lenguaje SQL
 
-7. [Modelo Entidad Relación Extendido (EER)](t9.html)
+8. [Modelo Entidad Relación Extendido (EER)](t9.html)
    - Formas normales
    - Modelo conceptual
    - Modelo lógico
    - Modelo físico
 
-8.  [GIT: Comandos básicos de GIT](t10.html)
+9.  [GIT: Comandos básicos de GIT](t10.html)
 
-9.  [Desarrollo seguro](t11.html)
+10. [Desarrollo seguro](t11.html)
     - Problemas de seguridad de las aplicaciones web. OWASP TOP 10 – 2021
     - Recomendaciones sobre Desarrollo Seguro (CCN-CERT_BP-28)
 
-12. [Metodologías ágiles de desarrollo de software](t12.html)
+11. [Metodologías ágiles de desarrollo de software](t12.html)
     - Estrategias de integración continua, desarrollo continuo y monitorización continua
 
-13. [Los sistemas de identificación y firma de las administraciones Públicas](t13.html)
+12. [Los sistemas de identificación y firma de las administraciones Públicas](t13.html)
     - Sistema de firma electrónica mediante sello electrónico
     - Sistemas de código seguro de verificación
     - El sello electrónico de órganos o entidad
@@ -89,8 +89,8 @@ description: "Temario promoción A2 Perfirl Ingeniería de Software"
     - Política de firma electrónica y de certificados
     - Características de la sede electrónica
 
-14. [Accesibilidad web basada en Real decreto 1112/2018, de 7 de septiembre](t14.html)
+13. [Accesibilidad web basada en Real decreto 1112/2018, de 7 de septiembre](t14.html)
 
-15. [Real decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad (ENI)](t15.html)
+14. [Real decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad (ENI)](t15.html)
 
-16. [Real decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad](t16.html)
+15. [Real decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad](t16.html)
