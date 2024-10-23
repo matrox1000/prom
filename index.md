@@ -1,6 +1,6 @@
 ---
-title: Mi Página en GitHub
-description: Ejemplo de documento Markdown para GitHub Pages
+title: "Temario promoción A2"
+description: "Temario promoción A2 Perfirl Ingeniería de Software"
 ---
 # Índice de Temas
 

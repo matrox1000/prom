@@ -1,3 +1,6 @@
+---
+title: "Progreso de lo temas"
+---
 # Estado del temario
 
 ## Común

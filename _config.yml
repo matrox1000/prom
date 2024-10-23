@@ -1,5 +1,6 @@
 title: "Temario promoción A2"
 description: "Temario promoción A2 Perfirl Ingeniería de Software"
 theme: minima  # Cambia por el tema que prefieras
-sass:
-    style: compressed
+header_pages:
+  - /
+  - /about.md
