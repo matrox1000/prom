@@ -1,7 +1,6 @@
 ---
 title: Mi Página en GitHub
 description: Ejemplo de documento Markdown para GitHub Pages
-theme: minima 
 ---
 # Índice de Temas
 
@@ -15,26 +14,24 @@ theme: minima
 
 ## Temas específicos
 
-1. [Diseño y programación orientada a objetos. Elementos y componentes](t1.html)
+1 y 2. [Diseño y programación orientada a objetos. Elementos y componentes](t1y2.html)
    - Objetos
    - Clases
    - Herencia
    - Métodos
    - Sobrecarga
-
-2. [C#](t2.html)
    - Sintaxis y conceptos del lenguaje C#
    - Programación orientada a objetos con C#: clases
    - Depuración de código con C#, gestión de errores y excepciones
    - El lenguaje integrado de consultas (LINQ) en C#
 
-3. [ASP.NET MVC 5](t3.html)
+1. [ASP.NET MVC 5](t3.html)
    - Acciones de los controladores. Tipos y parámetros
    - Validación de los modelos
    - Sintaxis de las vistas
    - Seguridad en aplicaciones MVC 5. Uso de claves criptográficas, mecanismos de autenticación y control de sesiones
 
-4. [PHP 8](t4.html)
+2. [PHP 8](t4.html)
    - Sintaxis
    - Variables, tipos de datos, estructuras de control, arrays y funciones
    - Programación orientada a objetos
@@ -42,25 +39,25 @@ theme: minima
    - Control de errores
    - Conexiones a BD
 
-5. [Vue JS](t5.html)
+3. [Vue JS](t5.html)
    - Fundamentos de Vue JS 2
    - Rutas en Vue JS 2 con Vue-Router
    - Directivas y filtros de Vue JS 2
 
-6. [SASS](t6.html)
+4. [SASS](t6.html)
    - Fundamentos y sintaxis de SASS
    - Uso de variables en SASS
    - Anidamiento, funciones y mixins en SASS
    - Estructura y organización de proyectos con SASS
 
-7. [Arquitectura cliente/servidor](t7.html)
+5. [Arquitectura cliente/servidor](t7.html)
    - Arquitectura orientada a servicios (SOA)
    - Servicios Web SOAP. Descripción y descubrimiento de servicios
    - XML y JSON
    - Servicios REST
    - Estándares y seguridad en servicios web y REST
 
-8. [Lenguaje SQL](t8.html)
+6. [Lenguaje SQL](t8.html)
    - Consultas de selección avanzadas del lenguaje SQL
    - Optimización de sentencias
    - Entidades, atributos y relaciones
@@ -69,15 +66,15 @@ theme: minima
    - Restricciones de integridad
    - Operaciones sobre tablas con lenguaje SQL
 
-9. [Modelo Entidad Relación Extendido (EER)](t9.html)
+7. [Modelo Entidad Relación Extendido (EER)](t9.html)
    - Formas normales
    - Modelo conceptual
    - Modelo lógico
    - Modelo físico
 
-10. [GIT: Comandos básicos de GIT](t10.html)
+8.  [GIT: Comandos básicos de GIT](t10.html)
 
-11. [Desarrollo seguro](t11.html)
+9.  [Desarrollo seguro](t11.html)
     - Problemas de seguridad de las aplicaciones web. OWASP TOP 10 – 2021
     - Recomendaciones sobre Desarrollo Seguro (CCN-CERT_BP-28)
 
