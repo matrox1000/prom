@@ -1,0 +1,5 @@
+title: "Temario promoción A2"
+description: "Temario promoción A2 Perfirl Ingeniería de Software"
+theme: minima  # Cambia por el tema que prefieras
+baseurl: ""    # Si es para un repositorio de usuario, déjalo en blanco. Si es para un proyecto, añade "/nombre-repositorio"
+url: "https://matrox1000.github.io/prom/"  # La URL de tu sitio
