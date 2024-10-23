@@ -1,6 +1,7 @@
 ---
 title: Mi Página en GitHub
 description: Ejemplo de documento Markdown para GitHub Pages
+theme: minima 
 ---
 # Índice de Temas
 
