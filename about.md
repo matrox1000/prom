@@ -14,7 +14,7 @@ title: "Progreso de lo temas"
 ## Específico
 - t1 y t2: Libro de C# (falta de la 45 a la 61 por meter)
 - **t3: OK**
-- t4: Falta clases, sesiones y errores
+- **t4: OK**
 - t5:
 - **t6: OK**
 - t7:
