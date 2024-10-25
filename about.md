@@ -15,14 +15,14 @@ title: "Progreso de lo temas"
 - t1 y t2: Libro de C# (falta de la 45 a la 61 por meter)
 - **t3: OK**
 - **t4: OK**
-- t5:
+- **t5: OK**
 - **t6: OK**
 - t7:
-- t8: esperando material
+- t8: in progress
 - t9: por la diapo 19 
 - **t10: OK**
 - t11:
-- t12: Falta la parte general de metodologías agiles??
+- t12: entra lo de la CI / CD ?
 - t13:
 - **t14: OK**
 - **t15: OK**
