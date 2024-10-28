@@ -22,7 +22,7 @@ title: "Progreso de lo temas"
 - t9: por la diapo 19 
 - **t10: OK**
 - **t11: OK**
-- t12: falta la web de CI / CD
+- **t12: OK**
 - t13:
 - **t14: OK**
 - **t15: OK**
