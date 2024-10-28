@@ -21,8 +21,8 @@ title: "Progreso de lo temas"
 - t8: in progress
 - t9: por la diapo 19 
 - **t10: OK**
-- t11:
-- t12: entra lo de la CI / CD ?
+- t11: Falta Valicación de e/s y gestion de errores
+- t12: falta la web de CI / CD
 - t13:
 - **t14: OK**
 - **t15: OK**
