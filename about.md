@@ -23,7 +23,9 @@ title: "Progreso de lo temas"
 - **t10: OK**
 - **t11: OK**
 - **t12: OK**
-- t13:
+- **t13: OK**
 - **t14: OK**
 - **t15: OK**
 - **t16: OK**
+
+TODO: Falta repasar todos los temas: errores de formato markdown, etc..
