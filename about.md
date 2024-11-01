@@ -19,7 +19,7 @@ title: "Progreso de lo temas"
 - **t6: OK**
 - **t7: OK**
 - t8: in progress
-- t9: por la diapo 19 
+- **t9: OK**
 - **t10: OK**
 - **t11: OK**
 - **t12: OK**
