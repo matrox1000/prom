@@ -17,8 +17,7 @@ title: "Progreso de lo temas"
 - **t4: OK**
 - **t5: OK**
 - **t6: OK**
-- **t7: OK**
-- t8: in progress
+- **t7: falta Chapter 3 More Advanced CRUD, Chapter 5 Selecting From Yourself y SQL INDEX (w3schools.com) 
 - **t9: OK**
 - **t10: OK**
 - **t11: OK**
