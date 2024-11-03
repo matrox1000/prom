@@ -18,7 +18,7 @@ title: "Progreso de lo temas"
 - **t5: OK**
 - **t6: OK**
 - **t7: falta Chapter 3 More Advanced CRUD, Chapter 5 Selecting From Yourself y SQL INDEX (w3schools.com) 
-- **t9: OK**
+- **t9: OK (Acotado)**
 - **t10: OK**
 - **t11: OK**
 - **t12: OK**
