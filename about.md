@@ -13,7 +13,7 @@ title: "Progreso de lo temas"
 
 ## Específico
 - **t1 y t2: OK (Acotado)**
-- **t3: OK**
+- **t3: OK (Acotado)**
 - **t4: OK**
 - **t5: OK**
 - **t6: OK**
