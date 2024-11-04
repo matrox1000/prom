@@ -14,7 +14,7 @@ title: "Progreso de lo temas"
 ## Específico
 - **t1 y t2: OK (Acotado)**
 - **t3: OK (Acotado)**
-- **t4: OK**
+- **t4: OK (Acotado)**
 - **t5: OK**
 - **t6: OK**
 - **t7: falta Chapter 3 More Advanced CRUD, Chapter 5 Selecting From Yourself y SQL INDEX (w3schools.com) 
