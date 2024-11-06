@@ -81,7 +81,7 @@ description: "Temario promoción A2 Perfirl Ingeniería de Software"
     - Problemas de seguridad de las aplicaciones web. OWASP TOP 10 – 2021
     - Recomendaciones sobre Desarrollo Seguro (CCN-CERT_BP-28)
 
-12. [Metodologías ágiles de desarrollo de software](t12.html)
+12. [Metodologías ágiles de desarrollo de software](t12.html) [Esquema](t12s.html)
     - Estrategias de integración continua, desarrollo continuo y monitorización continua
 
 13. [Los sistemas de identificación y firma de las administraciones Públicas](t13.html)
