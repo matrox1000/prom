@@ -77,7 +77,7 @@ description: "Temario promoción A2 Perfirl Ingeniería de Software"
 
 10. [GIT: Comandos básicos de GIT](t10.html)
 
-11. [Desarrollo seguro](t11.html)
+11. [Desarrollo seguro](t11.html)([Esquema](t11s.html))
     - Problemas de seguridad de las aplicaciones web. OWASP TOP 10 – 2021
     - Recomendaciones sobre Desarrollo Seguro (CCN-CERT_BP-28)
 
